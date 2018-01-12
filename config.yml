@@ -1,0 +1,42 @@
+############################
+# AutoKiller Configuration #
+############################
+
+# Choose whether or not the plugin will run a command when the vl-to-ban is reached.
+ban: true
+
+# The ping at which all checks will be disabled to prevent false positives due to lag.
+max-ping: 260
+
+# Here you can set the command that will be run when a player reaches a high enough VL to be banned.
+# Placeholders: %player% for the player's name.
+ban-command: "ban %player% &6AutoKiller &f» &cUnfair Advantage"
+
+# You can customize the alert messages here.
+# Placeholders: %player% for player's name, %ping% for player's ping, %cheat% for the cheat type, %vl% for the violation level (VL is cps for clickspeed-alert).
+clickspeed-alert: "&8[&6AutoKiller&8] &c%player% &8[&e%ping%ms&8] &7is suspected for &c%cheat% &8[&b%vl% cps&8]"
+normal-alert: "&8[&6AutoKiller&8] &c%player% &8[&e%ping%ms&8] &7is suspected for &c%cheat% &7VL:%vl%"
+
+click-speed:
+  vl-to-alert: 8
+  vl-to-ban: 30
+  enabled: true
+  # The cps at which the "Click Speed" check will alert/ban.
+  max-speed: 16
+
+# Consistent-Clicks check options
+consistent-clicks:
+  vl-to-alert: 10
+  vl-to-ban: 30
+  enabled: true
+  # The sensitivity of the consistency check. Lower values are more sensitive. Recommended 18-35, default 21.
+  sensitivity: 21
+
+# Zero-Delay check options
+zero-delay:
+  vl-to-alert: 14
+  vl-to-ban: 30
+  enabled: true
+
+# Don't change this
+config-version: 2.5

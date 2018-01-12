@@ -1,0 +1,9 @@
+name: AutoKiller
+main: net.climaxmc.autokiller.AutoKiller
+version: 2.6
+authors: [Jonhan]
+softdepend: [ProtocolLib]
+commands:
+  autokiller:
+    description: Main AutoKiller command.
+    aliases: ak

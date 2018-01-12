@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="AutoKiller:jar">
+    <output-path>$USER_HOME$/Desktop/Climax Development</output-path>
+    <root id="archive" name="AutoKiller.jar">
+      <element id="module-output" name="AutoKiller" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+    </root>
+  </artifact>
+</component>
